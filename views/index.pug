@@ -1,0 +1,21 @@
+//
+   Created by surya on 5/12/17.
+
+html
+    head
+        title= title
+        style
+            include style.css
+    body
+        form(action='/api/findRiders', method='get')
+            div.container
+                span
+                    label(for=type) Select Type
+                    select(name="type" id="type")
+                     option(value="vehicle") Vehicle
+                     option(value="starship") Starship
+                span
+                    label(for='id') ID for vehicle
+                    input(type='number' id='id', name='id')
+                span
+                    button(type='submit') Get Info

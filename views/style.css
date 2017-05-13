@@ -1,0 +1,23 @@
+.container {
+    margin: 5% auto;
+    width: 51%;
+    padding: 1px 20px;
+}
+
+.container span label, input {
+    margin: 0 10px;
+}
+
+.result {
+    border-top: 2px solid;
+}
+.beauty {
+    float: left;
+    width: 30%;
+    margin: 0 10%;
+}
+.raw {
+    float: right;
+    margin: 0 10%;
+    width: 30%;
+}

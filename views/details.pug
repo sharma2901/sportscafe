@@ -1,0 +1,29 @@
+//
+   Created by surya on 5/12/17.
+
+html
+    head
+        title= title
+    body
+        include index
+        if data
+            div.result
+                div.beauty
+                    each val, key in data
+                        if Array.isArray(val)
+                            p!= '<strong>' + key + '</strong>' + ': ['
+                            each arrayVal in val
+                                //p= JSON.stringify(arrayVal)
+                                p= '    {'
+                                each riderVal, riderKey in arrayVal
+                                    p!= '        <strong>' + riderKey + '</strong>' + ': ' + riderVal
+                                p= '    },'
+                            p= ']'
+                        else
+                            p!= '<strong>' + key + '</strong>' + ': ' + val
+                div.raw
+                    p= JSON.stringify(data)
+
+        if err
+            div.error
+                p= err.message

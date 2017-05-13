@@ -1,0 +1,18 @@
+{
+  "name": "sportscafe-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Surya Sharma <suryasharma2901@gmail.com> (https://github.com/sharma2901)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "pug": "^2.0.0-rc.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
